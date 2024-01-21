@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
+
 <body>
-    <div class="board">
-      <form id="todo-form">
-        <input type="text" placeholder="New TODO..." id="todo-input" />
-        <button type="submit">Add +</button>
-      </form>
+  <div class="container">
+    <div class="lanes">
+      <div class="todo-lane" id="todo-lane">
+        <h3 class="heading">TODO</h3>
 
-      <div class="lanes">
-        <div class="swim-lane" id="todo-lane">
-          <h3 class="heading">TODO</h3>
+        <form id="todo-form">
+          <input type="text" placeholder="New TODO..." id="todo-input" />
+          <button type="submit">Add +</button>
+        </form>
+      </div>
 
-        </div>
+      <div class="todo-lane">
+        <h3 class="heading">In Progress</h3>
+      </div>
 
-        <div class="swim-lane">
-          <h3 class="heading">Doing</h3>
-
-         
-        </div>
-
-        <div class="swim-lane">
-          <h3 class="heading">Done</h3>
-
-        </div>
+      <div class="todo-lane">
+        <h3 class="heading">Done</h3>
       </div>
     </div>
-  </body>
- <script src="/assets/script.js"></script>
+  </div>
+</body>
+<script src="/assets/script.js"></script>
+
 </html>
